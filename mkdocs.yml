@@ -1,0 +1,13 @@
+site_name: ✌️
+site_url: https://mydomain.org/mysite
+theme:
+  # name: material
+  name: bootstrap
+  color_mode: dark
+
+nav:
+  - Home: index.md
+  # - Publication: publicaton.md
+
+extra_css:
+  - extra.css
