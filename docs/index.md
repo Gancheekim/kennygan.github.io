@@ -5,37 +5,47 @@
 
 <br clear="left">
 
-<img src="images/profile_pic.png" class="profile-circle">
+<!-- <img src="images/profile_pic.png" class="profile-circle"> -->
 
-I am an incoming Ph.D student in Electrical and Computer Engineering at the University of Southern California (USC). I currently serve as a research assistant at Academia Sinica, working with Dr. [Jun-Cheng chen](https://homepage.citi.sinica.edu.tw/pages/pullpull/index_en.html) on topics related on Generative Video Processing/Restoration & World Model. I earned my B.S and M.S from National Taiwan Univeristy (NTU) in Electrical Engineering, and I was fortunate to worked with Prof. [Jian-Jiun Ding](https://ee.ntu.edu.tw/en/article/teacher.person/jobSN/3/navSN/356/webSN/385/teacherSN/1) on Image/Video Signal Processing.
+<img src="images/USJ_kim_profile_crop.jpg" class="profile-circle">
+
+I am an incoming Ph.D student in Electrical and Computer Engineering at the University of Southern California (USC), supervised by Prof. [C.-C. Jay Kuo](https://viterbi.usc.edu/directory/faculty/Kuo/Chung-Chieh). Previously, I served as a RA at Academia Sinica, working with Dr. [Jun-Cheng chen](https://homepage.citi.sinica.edu.tw/pages/pullpull/index_en.html). I earned my B.S and M.S from National Taiwan Univeristy (NTU) in Electrical Engineering, and I was fortunate to worked with Prof. [Jian-Jiun Ding](https://ee.ntu.edu.tw/en/article/teacher.person/jobSN/3/navSN/356/webSN/385/teacherSN/1) on Image/Video Signal Processing.
 
 <br clear="left">
+
+google scholar: 
+<a href="https://scholar.google.com/citations?hl=en&user=6jwpMEkAAAAJ&view_op=list_works&gmla=AO4B3jsCfqL3oIAwXwBRYVKecOaWUN2zgn4oUxsP3IwvClbSE3KNZBYNmVhENssIj43_Ma5ISJceHasnsbYZ4GZn">
+  <img src="images/Google_Scholar_logo.svg.webp" alt="google scholar link" height="30">
+</a>
 
 ##### Research Interests
 My research interests span from low-level (image/video signal processing, computer vision) to high-level (computational imaging, generative AI) vision tasks.
 
+My current research project works on image codec.
+
 ##### Hobbies
-I enjoy reading, coffee, hiking, basketball, watching animes when I am free.
+I enjoy reading, coffee, running, basketball, and watching animes/movies when I am free.
 
 ##### Experiences
 I gained valuable industry experiences at Novatek, MediaTek, and MobileDrive.
 
-- **Novatek** (full-time): R&D AI-based and handcraft-based image/video signal processing algorithms for camera SoC. Modules designed includes HDR, noise reduction, motion detection.
-- **MediaTek** (internship): Accelerate CNNs, working on codec standards like H.265/H.266 including deblocking filter.
-- **Mobiledrive** (internship): Integrate multi-threaded software architecture for ADAS services, including Bird-Eye-View 3D Object Detection and Tracking.
+- **Novatek** `(full-time)`: Served as System-on-Chip Algorithm Engineer. I designed both hardware and software algorithm for camera SoC, mostly focusing on HDR imaging algorithms.
+- **MediaTek** `(internship)`: I interned at the video codec standard team, had some hands-on experience on H.265 and H.266.
+- **Mobiledrive** `(internship)`: I interned at the Advance Driver Assistance System (ADAS) team. Mostly doing software integration for Bird-Eye-View 3D object detection & tracking.
 
 <div style="clear: both;"></div>
 
 ---
 ##### Contact
 
-- **Email**: [gankenny26@gmail.com](mailto:gankenny26@gmail.com)  or  [kenny_gan@citi.sinica.edu.tw](mailto:kenny_gan@citi.sinica.edu.tw)
+- **Email**: [gankenny26@gmail.com](mailto:gankenny26@gmail.com)  or  [cheekimg@usc.edu](mailto:cheekimg@usc.edu)
 - **LinkedIn**: [LinkedIn](https://www.linkedin.com/in/gancheekim/)
 
 ---
 #### News
 
-- (03/25/2026) I have been accepted to USC ECE Ph.D.
+- (2026 Aug) One paper is accepted to Siggraph Asia 2026. (coming soon)
+- (2026 Mar) I have been accepted to USC ECE Ph.D.
 
 ---
 #### Publication
@@ -50,8 +60,9 @@ IWAIT 2025 <br>
 
 --- 
 #### Article
+
 [A Tutorial for Diffusion Model in 2023](https://hackmd.io/@GanCheeKim99/tutorial-DM-2023) <br>
 A comprehensive review of theory, architectures, applications, and video generation of the Diffusion Models (up to June 2023) <br>
 
 ---
-*Last updated: 2026/03/29*
+*Last updated: 2026/08/08*
