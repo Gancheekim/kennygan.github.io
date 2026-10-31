@@ -11,3 +11,6 @@ nav:
 
 extra_css:
   - extra.css
+
+extra_javascript:
+  - teaser-zoom.js

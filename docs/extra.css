@@ -3,17 +3,20 @@
     display: none !important;
 }
 
-/* 2. Force the main content to take up the full width and reset margins */
+/* Fill the row after removing the sidebar, including Bootstrap's column limits. */
 .col-md-9 {
+    flex: 0 0 100% !important;
     width: 100% !important;
-    padding-left: 0 !important; /* This pulls the text to the far left */
+    max-width: 100% !important;
     margin-left: 0 !important;
 }
 
-/* 3. Optional: If you want the whole site container to be wider or left-aligned */
+/* Center a container that uses 70% of the viewport width. */
 .container {
-    max-width: 70%; /* Makes the page use more of the screen width */
-    margin-left: 25%; /* Centers it slightly but stays mostly left */
+    width: 62%;
+    max-width: none;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 /* Keep your existing profile-circle code below */
@@ -25,4 +28,72 @@
     margin-right: 30px;
     object-fit: cover;
     box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.publication-entry {
+    --teaser-scale: 3;
+    display: grid;
+    grid-template-columns: 220px minmax(0, 1fr);
+    gap: 24px;
+    align-items: start;
+    margin: 16px 0 28px;
+}
+
+.publication-teaser {
+    position: relative;
+    z-index: 1;
+    display: block;
+}
+
+.publication-teaser img {
+    display: block;
+    width: 100%;
+    height: auto;
+    max-width: 100%;
+    transform-origin: top left;
+    transition: transform 250ms ease, box-shadow 250ms ease;
+}
+
+.publication-teaser:focus-visible {
+    z-index: 1100;
+}
+
+.publication-teaser:focus-visible img {
+    transform: translate(var(--teaser-offset-x, 0px), var(--teaser-offset-y, 0px)) scale(var(--teaser-zoom, var(--teaser-scale)));
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.25);
+}
+
+@media (hover: hover) and (pointer: fine) {
+    .publication-teaser:hover {
+        z-index: 1100;
+    }
+
+    .publication-teaser:hover img {
+        transform: translate(var(--teaser-offset-x, 0px), var(--teaser-offset-y, 0px)) scale(var(--teaser-zoom, var(--teaser-scale)));
+        box-shadow: 0 8px 24px rgba(0, 0, 0, 0.25);
+    }
+}
+
+@media (max-width: 1000px) {
+    .publication-entry {
+        --teaser-scale: 2;
+    }
+}
+
+@media (max-width: 600px) {
+    .publication-entry {
+        --teaser-scale: 1;
+        grid-template-columns: minmax(0, 1fr);
+        gap: 12px;
+    }
+
+    .publication-teaser {
+        width: min(220px, 100%);
+    }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .publication-teaser img {
+        transition: none;
+    }
 }
