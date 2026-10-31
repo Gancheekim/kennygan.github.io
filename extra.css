@@ -1,0 +1,130 @@
+/* 1. Completely remove the sidebar column's width */
+.col-md-3 {
+    display: none !important;
+}
+
+/* Fill the row after removing the sidebar, including Bootstrap's column limits. */
+.col-md-9 {
+    flex: 0 0 100% !important;
+    width: 100% !important;
+    max-width: 100% !important;
+    margin-left: 0 !important;
+}
+
+/* Center a container that uses 70% of the viewport width. */
+.container {
+    width: 62%;
+    max-width: none;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Keep your existing profile-circle code below */
+.profile-circle {
+    float: left;
+    width: 185px; 
+    height: 185px;
+    border-radius: 50%; 
+    margin-right: 30px;
+    object-fit: cover;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.publication-entry {
+    --teaser-scale: 3;
+    display: grid;
+    grid-template-columns: 220px minmax(0, 1fr);
+    gap: 24px;
+    align-items: start;
+    margin: 16px 0 28px;
+}
+
+.publication-teaser {
+    position: relative;
+    z-index: 1;
+    display: block;
+}
+
+.publication-teaser img {
+    display: block;
+    width: 100%;
+    height: auto;
+    max-width: 100%;
+    transform-origin: top left;
+    transition: transform 250ms ease, box-shadow 250ms ease;
+}
+
+.publication-teaser:focus-visible {
+    z-index: 1100;
+}
+
+.publication-teaser:focus-visible img {
+    transform: translate(var(--teaser-offset-x, 0px), var(--teaser-offset-y, 0px)) scale(var(--teaser-zoom, var(--teaser-scale)));
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.25);
+}
+
+@media (hover: hover) and (pointer: fine) {
+    .publication-teaser:hover {
+        z-index: 1100;
+    }
+
+    .publication-teaser:hover img {
+        transform: translate(var(--teaser-offset-x, 0px), var(--teaser-offset-y, 0px)) scale(var(--teaser-zoom, var(--teaser-scale)));
+        box-shadow: 0 8px 24px rgba(0, 0, 0, 0.25);
+    }
+}
+
+@media (max-width: 1000px) {
+    .publication-entry {
+        --teaser-scale: 2;
+    }
+}
+
+@media (max-width: 600px) {
+    .publication-entry {
+        --teaser-scale: 1;
+        grid-template-columns: minmax(0, 1fr);
+        gap: 12px;
+    }
+
+    .publication-teaser {
+        width: min(220px, 100%);
+    }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .publication-teaser img {
+        transition: none;
+    }
+}
+
+@media print {
+    /* Bootstrap's desktop print minimum otherwise extends beyond the paper. */
+    body,
+    .container {
+        min-width: 0 !important;
+    }
+
+    .container {
+        width: 100% !important;
+        max-width: none !important;
+        margin: 0;
+    }
+
+    .publication-entry {
+        grid-template-columns: 160px minmax(0, 1fr);
+        gap: 18px;
+        break-inside: avoid;
+    }
+
+    .publication-teaser {
+        width: auto;
+        z-index: auto !important;
+    }
+
+    .publication-teaser img {
+        transform: none !important;
+        box-shadow: none !important;
+        transition: none;
+    }
+}
