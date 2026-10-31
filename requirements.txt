@@ -1,0 +1,3 @@
+# This theme ships Bootstrap 4 assets; MkDocs 1.6 switched to Bootstrap 5 templates.
+mkdocs==1.5.3
+mkdocs-bootstrap==1.1.1

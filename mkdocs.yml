@@ -1,16 +1,15 @@
 site_name: homepage
-site_url: https://mydomain.org/mysite
+site_url: https://gancheekim.github.io/kennygan.github.io/
 theme:
   # name: material
   name: bootstrap
-  color_mode: dark
 
 nav:
   - Home: index.md
   # - Publication: publicaton.md
 
 extra_css:
-  - extra.css
+  - extra.css?v=20261030-2
 
 extra_javascript:
-  - teaser-zoom.js
+  - teaser-zoom.js?v=20261030-2

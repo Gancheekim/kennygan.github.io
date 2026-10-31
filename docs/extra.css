@@ -97,3 +97,34 @@
         transition: none;
     }
 }
+
+@media print {
+    /* Bootstrap's desktop print minimum otherwise extends beyond the paper. */
+    body,
+    .container {
+        min-width: 0 !important;
+    }
+
+    .container {
+        width: 100% !important;
+        max-width: none !important;
+        margin: 0;
+    }
+
+    .publication-entry {
+        grid-template-columns: 160px minmax(0, 1fr);
+        gap: 18px;
+        break-inside: avoid;
+    }
+
+    .publication-teaser {
+        width: auto;
+        z-index: auto !important;
+    }
+
+    .publication-teaser img {
+        transform: none !important;
+        box-shadow: none !important;
+        transition: none;
+    }
+}
